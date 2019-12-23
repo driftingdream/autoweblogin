@@ -9,7 +9,7 @@ if __name__== '__main__':
 
     ip = ''.join(re.findall(r"ss5=\"(.+?)\"",iphtml.text))
     dict['ip'] = ip
-    test_url = 'http://www.bing.com'
+    test_url = 'https://www.bing.com'
     r = rq.get(url, headers = header, params = dict)
 
     print(rq.get(test_url))
